@@ -1,1 +1,1 @@
-# how-to-specify-nodes-filter-mode
+# How to Specify Nodes Filter Mode
