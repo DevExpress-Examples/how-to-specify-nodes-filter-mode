@@ -12,9 +12,9 @@
         
         <dxg:GridControl Name="gridControl">
             <dxg:GridControl.Columns>
-                <dxg:GridColumn FieldName="Name" ReadOnly="True"/>
-                <dxg:GridColumn FieldName="Department" ReadOnly="True"/>
-                <dxg:GridColumn FieldName="Position" ReadOnly="True"/>
+                <dxg:GridColumn FieldName="Name"/>
+                <dxg:GridColumn FieldName="Department"/>
+                <dxg:GridColumn FieldName="Position"/>
             </dxg:GridControl.Columns>
             <dxg:GridControl.View>
                 <dxg:TreeListView KeyFieldName="ID" ParentFieldName="ParentID" AutoExpandAllNodes="True" ShowSearchPanelMode="Always" AutoWidth="True" 
