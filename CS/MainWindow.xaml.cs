@@ -47,11 +47,11 @@ namespace How_to_Specify_Nodes_Filter_Mode {
             InitializeComponent();
             gridControl.ItemsSource = Stuff.GetStuff();
 
-            List <TreeListFilterMode> filterModes = new List<TreeListFilterMode>();
-            filterModes.Add(TreeListFilterMode.Smart);
-            filterModes.Add(TreeListFilterMode.Standard);
-            filterModes.Add(TreeListFilterMode.Extended);
-            filterModes.Add(TreeListFilterMode.ExtendedWithChildren);
+            List <TreeListFilterMode> filterModes = new List<TreeListFilteringMode>();
+            filterModes.Add(TreeListFilteringMode.Nodes);
+            filterModes.Add(TreeListFilteringMode.ParentBranch);
+            filterModes.Add(TreeListFilteringMode.EntireBranch);
+            filterModes.Add(TreeListFilteringMode.Recursive);
             listBoxEdit.ItemsSource = filterModes;
         }
     }
