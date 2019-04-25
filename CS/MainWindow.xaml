@@ -18,7 +18,7 @@
             </dxg:GridControl.Columns>
             <dxg:GridControl.View>
                 <dxg:TreeListView KeyFieldName="ID" ParentFieldName="ParentID" AutoExpandAllNodes="True" ShowSearchPanelMode="Always" AutoWidth="True" 
-                                  FilterMode="{Binding SelectedItem, ElementName=listBoxEdit}" SearchString="Manager" />
+                                  FilteringMode="{Binding SelectedItem, ElementName=listBoxEdit}" SearchString="Manager" />
             </dxg:GridControl.View>
         </dxg:GridControl>
 
