@@ -1,0 +1,36 @@
+<Window x:Class="How_to_Specify_Nodes_Filter_Mode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        Title="MainWindow" Width="650" Height="450" >
+    <Grid>        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <dxg:GridControl Name="gridControl">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Name"/>
+                <dxg:GridColumn FieldName="Department"/>
+                <dxg:GridColumn FieldName="Position"/>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TreeListView KeyFieldName="ID" ParentFieldName="ParentID" AutoExpandAllNodes="True" ShowSearchPanelMode="Always" AutoWidth="True" 
+                                  FilteringMode="{Binding EditValue, ElementName=listBoxEdit}" SearchString="Manager" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+
+        <dxe:ListBoxEdit Grid.Column="1" Name="listBoxEdit"
+                         ItemsSource="{dxe:EnumItemsSource EnumType={x:Type dxg:TreeListFilteringMode}}"
+                         DisplayMember="Name"
+                         ValueMember="Value"
+                         ShowBorder="False" SelectedIndex="0" Margin="10">
+            <dxe:ListBoxEdit.StyleSettings>
+                <dxe:RadioListBoxEditStyleSettings />
+            </dxe:ListBoxEdit.StyleSettings>
+        </dxe:ListBoxEdit>
+    </Grid>
+</Window>
+ 
