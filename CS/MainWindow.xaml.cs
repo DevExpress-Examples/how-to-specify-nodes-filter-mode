@@ -46,13 +46,6 @@ namespace How_to_Specify_Nodes_Filter_Mode {
         public MainWindow() {
             InitializeComponent();
             gridControl.ItemsSource = Stuff.GetStuff();
-
-            List <TreeListFilteringMode> filterModes = new List<TreeListFilteringMode>();
-            filterModes.Add(TreeListFilteringMode.Nodes);
-            filterModes.Add(TreeListFilteringMode.ParentBranch);
-            filterModes.Add(TreeListFilteringMode.EntireBranch);
-            filterModes.Add(TreeListFilteringMode.Recursive);
-            listBoxEdit.ItemsSource = filterModes;
         }
     }
 }

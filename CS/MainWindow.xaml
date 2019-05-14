@@ -18,11 +18,15 @@
             </dxg:GridControl.Columns>
             <dxg:GridControl.View>
                 <dxg:TreeListView KeyFieldName="ID" ParentFieldName="ParentID" AutoExpandAllNodes="True" ShowSearchPanelMode="Always" AutoWidth="True" 
-                                  FilteringMode="{Binding SelectedItem, ElementName=listBoxEdit}" SearchString="Manager" />
+                                  FilteringMode="{Binding EditValue, ElementName=listBoxEdit}" SearchString="Manager" />
             </dxg:GridControl.View>
         </dxg:GridControl>
 
-        <dxe:ListBoxEdit Grid.Column="1" Name="listBoxEdit" ShowBorder="False" SelectedIndex="0" Margin="10">
+        <dxe:ListBoxEdit Grid.Column="1" Name="listBoxEdit"
+                         ItemsSource="{dxe:EnumItemsSource EnumType={x:Type dxg:TreeListFilteringMode}}"
+                         DisplayMember="Name"
+                         ValueMember="Value"
+                         ShowBorder="False" SelectedIndex="0" Margin="10">
             <dxe:ListBoxEdit.StyleSettings>
                 <dxe:RadioListBoxEditStyleSettings />
             </dxe:ListBoxEdit.StyleSettings>
