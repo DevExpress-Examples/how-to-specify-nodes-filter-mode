@@ -6,7 +6,7 @@
 <!-- default badges end -->
 # How to Specify Nodes Filter Mode
 
-The [TreeListView](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView) allows you to specify a [filter mode](https://docs.devexpress.com/WPF/11981/controls-and-libraries/data-grid/filtering-and-searching/filtering-in-code/filtering-nodes?v=19.1) that defines whether to show a node, its parents and children when they meet the filter criteria.
+The [TreeListView](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView) allows you to specify a [filter mode](https://docs.devexpress.com/WPF/11981/controls-and-libraries/data-grid/grid-view-data-layout/nodes/filter-nodes) that defines whether to show a node, its parents and children when they meet the filter criteria.
 
 ![filtering-nodes](/images/filtering-nodes-example.png)
 <!-- feedback -->
@@ -16,3 +16,4 @@ The [TreeListView](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListV
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
